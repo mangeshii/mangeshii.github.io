@@ -1,0 +1,163 @@
+.jb {
+	height: 750px;
+	padding-top: 280px;
+	border: 2px solid black;
+	margin: 0px;
+	background-color: #123c69;
+	color: white;
+}
+
+.projects {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #ececec;
+	height: 700px; 
+	padding-top: 50px;
+	width: 100%;
+    padding: 40px;
+	margin-top: 0px;
+}
+  
+.container1 {
+	width: 200px;
+	height: 250px;
+    margin: 50px;
+}
+
+.img1 {
+	height: 250px;
+	width: 200px;
+}
+
+.calc {
+	height: 264px;
+	width: 200px;
+}
+
+#sub1 {
+	line-height: 24px;
+}
+
+.subheading {
+	width: 200px;
+	height: 80px;
+	font-weight: 450;
+	font-size: 15px;
+	text-align: center;
+}
+
+.aboutme {
+	padding: 250px;
+	text-align: center;
+	background-color: #123c69;
+	color: white;
+}
+
+.heading {
+	font-size: 50px;
+}
+
+.heading2 {
+	margin: 0px;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 30px;
+	background-color: #ececec;
+}
+
+.paragraph {
+	font-size: 20px;
+}
+
+.any {
+	height: 40px;
+    margin: 10px;
+	text-align: center;
+	font-size: 50px;
+	padding: 50px;
+}
+
+.mytext {
+	margin: 0px;
+	padding: 0px;
+	font-family: fantasy;
+	text-align: center;
+	position: absolute;
+	background-color: rgb(203, 220, 236);
+	width: 100%;
+	height: 700px;
+}
+
+.text1 {
+	font-size: 50px;
+	font-weight: 600;
+	position: relative;
+    letter-spacing: 2px;
+	animation: text 3s 1;
+}
+
+.text2 {
+	font-size: 19px;
+	font-weight: 550;
+}
+
+.mytext span {
+	display: block;
+}
+
+@keyframes text {
+	0% {
+		color: #123c69;
+		margin-bottom: -5px;
+	}
+
+	30% {
+		letter-spacing: 7px;
+		margin-bottom: -5px;
+	}
+
+	85% {
+		letter-spacing: 5px;
+		margin-bottom: -5px;
+	}
+
+	100% {
+		letter-spacing: 1px;
+	}
+}
+
+.text-muted {
+	display: flex;
+    padding: 30px;
+	font-size: 30px;
+	background-color: #ececec;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 80px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 20px;
+	border-radius: 50%;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+
+.fa-github {
+	background-color: black;
+	color: white;
+}
+.float-right {
+	padding-top: 70px;
+}
