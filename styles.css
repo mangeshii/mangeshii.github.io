@@ -25,7 +25,7 @@
 	width: 200px;
 	height: 250px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
-	margin-right:35px
+	margin-right:45px
 }
 
 .img1 {
@@ -34,9 +34,11 @@
 }
 
 .calc {
-	height: 264px;
+	height: 262px;
 	width: 200px;
 }
+
+
 
 #sub1 {
 	line-height: 24px;
@@ -45,6 +47,13 @@
 .subheading {
 	width: 200px;
 	height: 80px;
+	font-weight: 450;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 7px;
+
+}
+.subheading1{
 	font-weight: 450;
 	font-size: 15px;
 	text-align: center;
@@ -134,7 +143,7 @@
 	transition-property:height ;
 	transition-duration: 3s;
 	transition-timing-function: ease-in-out;
-	margin-top:50px;
+	margin-top:35px;
 
 }
 .fa:hover {
@@ -153,7 +162,7 @@
 
 .text-muted {
 	display: flex;
-	height:250px;
+	height:200px;
     padding: 30px;
 	font-size: 30px;
 	background-color: #ececec;
@@ -161,10 +170,10 @@
 .text{
 	height:50px;
 	width:1000px;
-	
 	padding:20px;
-	margin:50px;
+
 	text-align: right;
+	margin-top:35px;
 }
 	
 	
