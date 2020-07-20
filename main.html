@@ -1,7 +1,9 @@
-<!Doctype html>
-<html>
+<!doctype html>
+<html lang="en">
 
     <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+            integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,86 +15,241 @@
         <!-- Icons link -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <!-- style sheet link -->
+        <!-- style sheet link -->
         <link rel="stylesheet" href="styles.css">
-        <title>Portfolio</title>
-
-
 
     </head>
 
     <body>
-        <div class="jb ">
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-            <div class="text-center">
-                <h1 class="text1">Hey I am Mangeshi,</h1>
-                <p class="text2">A Beginner to the Coding World</p>
+        <header class="header">
+            <!-- intr0 -->
+            <div class="intro">
+                <h1>Hey I am Mangeshi,</h1>
+                <p>A Beginner to the Coding World</p>
             </div>
-        </div>
 
-
-        <div class="container-fluid proj" id="project">
-            <div id="smallbox">
-                <div id="box">PROJECT</div>
-                <div id="box1"><a href="https://github.com/mangeshii/A-GUI-Calculator-Using-Tkinter"
-                        class="font-color">A GUI Calculator using Python</a></div>
-                <div id="box2"><a href="https://github.com/mangeshii/FCC-technical-documentation-page"
-                        class="font-color">Technical Paper using HTML & CSS</a></div>
-                <div id="box3"><a href="https://github.com/mangeshii/simple-django-project" class="font-color">A Simple
-                        Project using Django</a></div>
-                <div id="box4"><a href="https://github.com/mangeshii/FCC-survey-form" class="font-color">Survey Form
-                        using HTML & CSS</a></div>
-                <div id="box5"><a href="https://github.com/mangeshii/Image-viewer-app-using-tkinter"
-                        class="font-color">An Image Viewer App using Python</a></div>
-                <div id="box6"><a href="https://github.com/mangeshii/age-calculator-using-django" class="font-color">Age
-                        Calculator in Django</a></div>
+            <!-- logo -->
+            <div class="image">
+                <img src="images/girl.png">
             </div>
-        </div>
 
-        <div class="aboutme" id="about">
-            <div class="aboutheading">ABOUT ME</div>
-            <div class="aboutcont">
 
-                <div id="lefthalf"><img src="img2.jpg" class="leftimg"></div>
-                <div id="righthalf">
-                    <p class="paragraph"><b>I am a self-taught developer and I just started my journey into coding
-                            world.<br><br>At the moment I am tailoring my skills on HTML, CSS, Python, Bootstrap and
-                            Django .
-                            This gives
-                            me a lot of joy
-                            when I see my
-                            progress, while I am learning and trying to take action on what I have learned.</p></b>
+            <div class="image-top">
+                <img class="img-adjust" src="images/img-top.png">
+
+            </div>
+        </header>
+
+
+        <div class="second-page">
+            <div class="container-fluid">
+                <h1>Hi, I'm Mangeshi. Nice to meet you </h1>
+                <p>I am a self-taught developer and I just started my journey into coding
+                    world.<br>At the moment I am tailoring my skills on HTML, CSS, Python, Bootstrap and
+                    Django .
+                    This gives
+                    me a lot of joy
+                    when I see my
+                    progress, while I am learning and trying to take action on what I have learned.</p>
+
+                <div class="container">
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid skill" id="skills">
-            <div class="skillheading">SKILLS</div>
-            <div class="aboutskills">
-                <div class=" python "><img src="python.jpeg" class="image"></div>
-                <div class="bootstrap"><img src="bootstrap.jpeg" class="image"></div>
-                <div class="mysql"><img src="mysql.png" class="image"></div>
-                <div class="html"><img src="html1.png" class="image"></div>
-                <div class="css"><img src="css2.png" class="image"></div>
+
+
+
+        <div class="third-page">
+            <div class="container2" id="project">
+                <h1 class="mywork">My Work</h1>
+
+                <div class="card cards img-fluid" style="width:400px;height:270px">
+                    <img class="card-img-top" src="images/image_view2.png" alt="Card image"
+                        style="width:100%;height:100%">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">IMAGE VIEWER</h4>
+                        <p class="card-text">This python code provides a simple image viewer for the regular image
+                            formats. This
+                            image viewer also supports
+                            non-standard floating point images which are widely used in computer vision including
+                            optical flow,
+                            disparity, and depth
+                            formats.</p>
+                        <a href="https://github.com/mangeshii/Image-viewer-app-using-tkinter" class="btn btn-primary">Go
+                            to website</a>
+
+                    </div>
+                </div>
+
+
+                <div class="card cards img-fluid" style="width:400px;height:270px">
+                    <img class="card-img-top" src="images/tribute2.png" alt="Card image" style="width:100%;height:100%">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">TRIBUTE PAGE</h4>
+                        <p class="card2-text">This is a tribute page template for our Indian Army</p>
+                        <a href="https://codepen.io/mangeshipatil/pen/ZEYPXyg" class="btn btn-primary">Go to website</a>
+                    </div>
+                </div>
+
+
+                <div class="card cards img-fluid" style="width:400px;height:270px">
+                    <img class="card-img-top" src="images/survey1.png" alt="Card image" style="width:100%;height:100%">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">SURVEY FORM</h4>
+                        <p class="card2-text">An online survey form using HTML and CSS</p>
+                        <a href="https://github.com/mangeshii/FCC-survey-form" class="btn btn-primary">Go to website</a>
+                    </div>
+                </div>
+
+
+
+                <div class="card cards img-fluid" style="width:400px;height:270px">
+                    <img class="card-img-top" src="images/calculator2.png" alt="Card image"
+                        style="width:100%;height:100%">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">GUI CALCULATOR</h4>
+                        <p class="card-text">This is a simple GUI calculator using the Tkinter module. It can perform
+                            operations
+                            like addition, subtraction, division, multiplication, square-root, power and factor. Tkinter
+                            is builtin
+                            the Python
+                            module for developing the GUI application. It's easy to use and comes with Python. </p>
+                        <a href="https://github.com/mangeshii/A-GUI-Calculator-Using-Tkinter" class="btn btn-primary">Go
+                            to website</a>
+                    </div>
+                </div>
+
+
+
+                <div class="card cards img-fluid" style="width:400px;height:270px">
+                    <img class="card-img-top" src="images/linear_grad.png" alt="Card image"
+                        style="width:100%;height:100%">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">AGE CALCULATOR</h4>
+                        <p class="card-text">This Project is made using Django. Age calculator finds the age based on
+                            the date of
+                            birth and tells, how old are you exactly. It is specially programmed to find the exact age
+                            of a person
+                            or an animal. The calculated age is displayed in terms of
+                            years, months and days. </p>
+
+                        <a href="https://github.com/mangeshii/age-calculator-using-django" class="btn btn-primary">Go to
+                            website</a>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card cards img-fluid" style="width:400px;height:270px">
+                    <img class="card-img-top" src="images/technical2.png" alt="Card image"
+                        style="width:100%;height:100%">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">TECHNICAL DOCUMENTATION</h4>
+                        <p class="card1-text">It is made using HTML and CSS and the topic is about Amazon rainforest
+                        </p>
+                        <a href="https://github.com/mangeshii/FCC-technical-documentation-page"
+                            class="btn btn-primary">Go to website</a>
+                    </div>
+                </div>
+                <a href="https://github.com/mangeshii"><button type="button" class="btns btn-light">See more on
+                        Github</button></a>
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- skills -->
+        <div class="fourth-page">
+            <div class="container-fluid myskills">
+                <h1>Skills Overview</h1>
+                <p>Below is the quick overview of my main technical skills sets and tools I use</p>
+
+
+                <div class="container overlap">
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 card">
+                            <p><img class="pyt" src="images/python.jpeg"></p>
+
+                            <h3>Python</h3>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 card">
+                            <p><img class="pyt" src="images/html.png"></p>
+                            <h3>HTML</h3>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 card">
+                            <p><img class="pyt" src="images/css.png"></p>
+                            <h3>CSS</h3>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 card">
+                            <p><img class="pyt" src="images/mysql.png"></p>
+                            <h3>MySQL</h3>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 card">
+                            <p><img class="pyt" src="images/bootstrap.png"></p>
+                            <h3>Bootstrap</h3>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 card">
+                            <p><img class="pyt" src="images/command_line.png"></p>
+                            <h3>Command Line</h3>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
 
 
+
+        <div class="fifth-page">
+            <div class=" footer">
+                <div class=" sub-footer">
+                    <div class="left">Start a project</div>
+                    <div class="right">Interested in working together? We should queue up a chat.<br>Contact details
+                        given
+                        below</div>
+                </div>
+                <h1>Living, Learning & Leveling up<br>one day at a time</h1>
+
+                <div class="icons">
+
+                    <a href="https://www.instagram.com/mangeshipatil/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mangeshi-patil-6792a11a2" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/mangeshii" target="_blank"><i class="fa fa-github"
+                            aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
