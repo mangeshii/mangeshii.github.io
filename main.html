@@ -1,65 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
     <head>
-        <title>Bootstrap Example</title>
+        <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
             integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
-
+        <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     </head>
 
     <body>
-        <div class="container">
-            <div class="intro">
-                <h1>Hey I am Mangeshi,</h1>
-                <p>A Beginner to the Coding World</p>
-                <img src="images/girl.png" class="girl-adjust">
-            </div>
-            <div class="image"><img class="img-adjust" src="images/img-top.png"></div>
 
+        <!-- navbar -->
+        <nav class="navbar-expand-lg navbar-light  sticky-top">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill">Skills</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://s.docworkspace.com/d/AH0AEBywto8hseuu_9mdFA">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+        <!-- first-page heading  girl-image design-image  -->
+        <div class="container-fluid first-page">
+            <div class="text-center">
+                <div class="head">
+                    <h1>Hey I am Mangeshi,</h1>
+                    <p>A Beginner to the Coding World</p>
+                </div>
+
+                <div class="heroine">
+                    <img src="images/girl.png" class="girl-adjust img-fluid">
+                </div>
+
+                <div class="design">
+                    <img class="img-adjust img-fluid" src="images/img-top.png">
+                </div>
+            </div>
         </div>
 
-        <div class="container-fluid">
-            <div class="about">
-                <h1>Hi, I'm Mangeshi. Nice to meet you </h1>
-                <p class="col-sm-6 col-md-6 col-lg-8"> I am a self-taught developer and I just started my journey into
-                    coding
-                    world.<br>At the moment I am tailoring my skills on HTML, CSS, Python, Bootstrap and
-                    Django .
-                    This gives
-                    me a lot of joy
-                    when I see my
-                    progress,<br> while I am learning and trying to take action on what I have learned.</p>
 
+        <!-- second-page introduction and timeline -->
+        <div class="container-fluid second-page" id="about">
+            <div class="row">
+                <div class="col-12 intro text-center">
+                    <h1>About me </h1>
+                    <h5 class="lead"> I am a self-taught developer and I just started my journey into
+                        coding
+                        world.<br>At the moment I am tailoring my skills on HTML, CSS, Python, Bootstrap and
+                        Django.<br>
+                        This gives
+                        me a lot of joy
+                        when I see my
+                        progress,<br> while I am learning and trying to take action on what I have learned.</h5>
+                </div>
             </div>
-
-            <div class="container inner"></div>
-
         </div>
 
-        <div class="container-fluid cover"></div>
+        <!-- timeline -->
+        <div class="container-fluid second-page-overlap text-center" id="education">
+            <div class="container1">
+                <div class="edu">Education</div>
+                <div class="timeline">
+                    <div class="timeline-text">
+                        <h2>B.TECH</h2>
+                        <p>Electronics and Telecommunication, Don Bosco Technical Institute</p>
+                        <p>2018-present</p>
+                    </div>
+                    <div class="timeline-text">
+                        <h2>Diploma</h2>
+                        <p>Electronics and Telecommunication, St. Xaviers Technical Institute</p>
+                        <p>2015-2018</p>
+                    </div>
+                    <div class="timeline-text">
+                        <h2>SSC</h2>
+                        <p>Maharashtra State Board</p>
+                        <p> Till 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
+        <!-- projects -->
+        <div class="container-fluid projects" id="project">
+            <div class="workheading">MyWork</div>
+            <!-- <div class="container-fluid small-container"> -->
+            <div class="container-fluid flex-contain ">
 
 
-
-
-
-
-        <div class="workheading">MyWork</div>
-        <div class="project">
-            <div class="flex-contain">
                 <div class="flip-card  card-img-top">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -71,14 +144,15 @@
                             <p>This python code provides a simple image viewer for the regular image
                                 formats. This
                                 image viewer also supports
-                                non-standard floating point images which are widely used in computer vision including
+                                non-standard floating point images which are widely used in computer vision
+                                including
                                 optical flow,
                                 disparity, and depth
                                 formats.</p>
 
                             <a href="https://github.com/mangeshii/Image-viewer-app-using-tkinter"
-                                target="_blank"><button type="button" class="btn btn-outline-light">Go to
-                                    website</button></a>
+                                target="_blank"><button type="button" class="btn btn-outline-light">See on Github
+                                </button></a>
 
 
                         </div>
@@ -96,7 +170,7 @@
                         <div class="flip-card-back">
                             <p>This is a tribute page template for our Indian Army</p>
                             <a href="https://codepen.io/mangeshipatil/pen/ZEYPXyg" target="_blank"><button type="button"
-                                    class="btn btn-outline-light">Go to website</button></a>
+                                    class="btn btn-outline-light">See on Github</button></a>
                         </div>
                     </div>
 
@@ -135,10 +209,11 @@
                                 Tkinter
                                 is builtin
                                 the Python
-                                module for developing the GUI application. It's easy to use and comes with Python.</p>
+                                module for developing the GUI application. It's easy to use and comes with Python.
+                            </p>
                             <a href="https://github.com/mangeshii/A-GUI-Calculator-Using-Tkinter"
-                                target="_blank"><button type="button" class="btn btn-outline-light">Go to
-                                    website</button></a>
+                                target="_blank"><button type="button" class="btn btn-outline-light">See on
+                                    Github</button></a>
                         </div>
                     </div>
 
@@ -156,13 +231,14 @@
                         <div class="flip-card-back">
                             <p>This Project is made using Django. Age calculator finds the age based on
                                 the date of
-                                birth and tells, how old are you exactly. It is specially programmed to find the exact
+                                birth and tells, how old are you exactly. It is specially programmed to find the
+                                exact
                                 age
                                 of a person
                                 or an animal. The calculated age is displayed in terms of
                                 years, months and days.</p>
                             <a href="https://github.com/mangeshii/age-calculator-using-django" target="_blank"><button
-                                    type="button" class="btn btn-outline-light">Go to website</button></a>
+                                    type="button" class="btn btn-outline-light">See on Github</button></a>
                         </div>
                     </div>
 
@@ -180,94 +256,120 @@
                         <div class="flip-card-back">
                             <p>It is made using HTML and CSS and the topic is about Amazon rainforest.</p>
                             <a href="https://github.com/mangeshii/FCC-technical-documentation-page"
-                                target="_blank"><button type="button" class="btn btn-outline-light">Go to
-                                    website</button></a>
+                                target="_blank"><button type="button" class="btn btn-outline-light">See on
+                                    Github</button></a>
                         </div>
                     </div>
 
                 </div>
+
             </div>
+            <div class="gitbut">
+                <a href="https://github.com/mangeshii" target="_blank"><button type="button"
+                        class="btn button btn-outline-dark">See more on Github</button></a>
+            </div>
+        </div>
         </div>
 
 
-        <div class="skills">
+        <!-- skills heading -->
+
+        <div class="container-fluid skills" id="skill">
             <div class="skillheading">
                 <h1>Skills Overview</h1>
-                <p>Below is the quick overview of my main technical skills sets and tools I use</p>
+                <h5>Below is the quick overview of my main technical skills sets and tools I use</h5>
             </div>
-            <div class="myskills">
-                <div class="row">
+        </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 card">
-                        <p><img class="pyt" src="images/python.jpeg"></p>
+        <!-- skills -->
+        <div class="container-fluid skill-icon">
+            <div class="row">
 
-                        <h3>Python</h3>
-                    </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card">
+                    <p><i class="fab fa-python"></i></p>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 card">
-                        <p><img class="pyt" src="images/html.png"></p>
-                        <h3>HTML</h3>
-                    </div>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 card">
+                    <p><i class="fa fa-html5" aria-hidden="true"></i></p>
+                    <h3>HTML</h3>
+                </div>
 
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 card">
-                        <p><img class="pyt" src="images/css.png"></p>
-                        <h3>CSS</h3>
-                    </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card">
+                    <p><i class="fab fa-css3-alt"></i></p>
+                    <h3>CSS</h3>
+                </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 card">
-                        <p><img class="pyt" src="images/mysql.png"></p>
-                        <h3>MySQL</h3>
-                    </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card">
+                    <p><i class="fas fa-database"></i></p>
+                    <h3>MySQL</h3>
+                </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 card">
-                        <p><img class="pyt" src="images/bootstrap.png"></p>
-                        <h3>Bootstrap</h3>
-                    </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card">
+                    <p><i class="fa fa-bold" aria-hidden="true"></i></p>
+                    <h3>Bootstrap</h3>
+                </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 card">
-                        <p><img class="pyt" src="images/command_line.png"></p>
-                        <h3>Command Line</h3>
-                    </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card">
+                    <p><i class="fas fa-terminal"></i></p>
+                    <h3>Command Line</h3>
+                </div>
 
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- footer -->
+        <div class="container-fluid footer text-center " id="contact">
+            <div class="footer-text text-center">
+                <h>Living, Learning & Leveling up<br>one day at a time</h1>
+            </div>
+
+            <div class="icons text-center">
+
+                <a href="https://www.instagram.com/mangeshipatil/" target="_blank"><i
+                        class="fab insta fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mangeshi-patil-6792a11a2" target="_blank"><i
+                        class="fa linkedin fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/mangeshii" target="_blank"><i class="fa github fa-github"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <!-- subfooter -->
+        <div class="container-fluid subfooter text-center">
+            <div class="row">
+                <div class="left col-md-6 col-lg-4 ">
+                    <h1>Start a project</h1>
+                </div>
+                <div class="right col-md-6 col-lg-8 ">
+                    <h>Interested in working together? We should queue up a
+                        chat.<br>Contact details
+                        given
+                        below</h>
                 </div>
             </div>
+
         </div>
 
-
-
-
-
-
-        <div class="footer">
-            <div class="footer-text">
-                <h1>Living, Learning & Leveling up<br>one day at a time</h1>
-            </div>
-
-            <div class="icons">
-
-                <a href="https://www.instagram.com/mangeshipatil/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/mangeshi-patil-6792a11a2" target="_blank"><i class="fa fa-linkedin"
-                        aria-hidden="true"></i></a>
-                <a href="https://github.com/mangeshii" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i></a>
-            </div>
-            <div class="sub-footer ">
-                <div class="left col-lg-5 col-md-12 col-sm-12">Start a project</div>
-                <div class="right col-lg-7 col-md-12 col-sm-12">Interested in working together? We should queue up a
-                    chat.<br>Contact details
-                    given
-                    below</div>
-            </div>
-        </div>
-
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>
-
-
-
-
-
-
-

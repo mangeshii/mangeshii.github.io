@@ -1,87 +1,204 @@
-.container {
-	text-align: center;
-	padding-top: 5%;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.navbar-light {
+	background-color: white;
+}
+
+.navbar-nav {
+	/* border:2px solid black; */
+	margin-top: 0;
+}
+.nav-item {
+	/* border:2px solid red; */
+	padding: 1rem 1rem;
+	background-color: white;
+}
+.nav-link {
+	font-size: 1.5rem;
+}
+.first-page {
 	height: 100%;
+	width: 100%;
+}
+
+.head h1 {
+	font-size: 4em;
+	margin-top: 6rem;
+	font-family: 'Kanit';
+	font-weight: 600;
+	color: #36454f;
+}
+
+.head p {
+	font-size: 1.7rem;
+	font-family: 'Kanit';
+	color: #36454f;
+	font-weight: 500;
+}
+
+.heroine {
+	margin-top: 3rem;
 }
 
 .girl-adjust {
-	max-height: 50%;
-	max-width: 40%;
+	height: 19rem;
 }
 
-.intro h1 {
-	font-size: 4vw;
+.design {
+	margin-top: 5.8rem;
 }
-
-.intro p {
-	font-size: 1.5vw;
-	margin-bottom: 5%;
-}
-
 .img-adjust {
-	max-height: 8%;
-	max-width: 60%;
-	margin-top: 7%;
+	height: 17rem;
 }
 
-.container-fluid {
+.second-page {
+	height: 100%;
+	width: 100%;
 	background-color: #98ff98;
-	width: 100%;
-	height: 500px;
-	display: flex;
-	justify-content: center;
 }
 
-.about {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 300px;
-	width: 100%;
-	margin-top: 4rem;
-	text-align: center;
+.intro {
+	height: 30rem;
 }
-
-.about h1 {
+.intro h1 {
 	color: white;
+	margin-top: 5.5rem;
+	font-size: 2.7rem;
+	margin-bottom: 2rem;
+	font-family: 'Kanit';
 }
 
-.about p {
+.intro h5 {
+	margin-bottom: 5%;
 	color: white;
-	font-size: 1.4vw;
-	line-height: 1.25;
-	letter-spacing: 1px;
-	width: 100%;
-	margin-top: 1rem;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 1.5rem;
+	font-family: 'Kanit';
 }
-
-.inner {
+.second-page-overlap {
+	height: 56rem;
+	width: 70%;
 	background-color: white;
-	height: 600px;
-	width: 80%;
-	margin-top: 23rem;
-	position: absolute;
+	margin-top: -7rem;
 	border-radius: 20px;
 }
 
-.cover {
-	background-color: white;
-	height: 480px;
-	width: 100%;
-}
-
-.project {
+.container1 {
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	padding: 40px;
+}
+
+.timeline {
+	width: 80%;
+	height: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.timeline-text {
+	background-color: #3b444b;
+	border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+	.timeline::before {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 4px;
+		left: 50%;
+		background-color: #3b444b;
+		transform: translateX((-50%));
+	}
+
+	.timeline-text {
+		width: 50%;
+		margin-bottom: 10px;
+		position: relative;
+		color: white;
+	}
+
+	.timeline-text:nth-child(odd) {
+		float: left;
+		clear: right;
+		transform: translate(-30px);
+	}
+
+	.timeline-text:nth-child(even) {
+		float: right;
+		clear: left;
+		transform: translate(30px);
+	}
+
+	.timeline-text::after {
+		content: '';
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		background-color: white;
+		border: 2px solid #3b444b;
+		border-radius: 50%;
+		top: 0;
+	}
+
+	.timeline-text:nth-child(odd)::after {
+		right: -30px;
+		transform: translate(50%, -50%);
+	}
+
+	.timeline-text:nth-child(even)::after {
+		left: -30px;
+		transform: translate(-50%, 50%);
+	}
+	.timeline-text:hover:after {
+		background-color: aqua;
+	}
+}
+
+.edu {
+	/* padding: 2rem; */
+	margin-bottom: 100px;
+	font-size: 2.5rem;
+	font-weight: 600;
+	font-family: Kanit;
+	/* border:2px solid black; */
+	text-align: center;
+}
+
+.timeline-text h2 {
+	font-size: 1.5rem;
+	margin-top: 1rem;
+	font-family: 'Kanit';
+}
+
+.timeline-text p {
+	font-size: 1rem;
+	font-family: 'Kanit';
+}
+
+.projects {
+	width: 100%;
+	background-color: white;
 }
 
 .workheading {
 	height: 100px;
-	font-size: 3vw;
-	font-weight: 600;
+	width: 100%;
+	margin-top: 2rem;
 	text-align: center;
+	font-size: 3rem;
+	font-weight: 600;
+	font-family: 'Kanit';
+
+	color: #414a4c;
 }
 
 .flex-contain {
@@ -91,6 +208,8 @@
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 5%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .flex-contain > div {
@@ -111,6 +230,7 @@
 	height: 27vh;
 	perspective: 1000px;
 	border-radius: 15px;
+	margin: 1rem;
 }
 
 .flip-card-inner {
@@ -148,6 +268,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: 'Kanit';
 }
 
 .flip-card-back {
@@ -160,36 +281,25 @@
 .flip-card-back p {
 	font-size: 1.5vh;
 	margin-top: 30px;
+	font-family: 'Kanit';
 }
-
-.btn {
-	margin-top: 2px;
-	padding: 8px 60px;
-	font-size: 2vh;
-
-	border-radius: 30px;
+.workimg {
+	border-radius: 20px;
+}
+.btn{
+	border-radius: 20px;
+	padding: 7px 32px;
 }
 
 .gitbut {
-	display: flex;
-	border: 2px solid yellow;
-	width: 100%;
-	height: 100px;
-	padding-left: 30%;
-	justify-content: center;
-	align-items: center;
+	margin-bottom: 7rem;
+	text-align: center;
 }
-
 .button {
-	border: 2px solid black;
-	padding: 2vh 5vh;
-	border-radius: 3vh;
-	font-size: 1vw;
-	font-size: 15px;
-}
-
-.workimg {
-	border-radius: 20px;
+	font-size: 1.5rem;
+	padding: 0.5rem 7rem;
+	border-radius: 25px;
+	font-family: 'Kanit';
 }
 
 .skills {
@@ -199,34 +309,35 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid black;
-}
-
-.cover1 {
-	background-color: red;
-	height: 600px;
 }
 
 .skillheading {
 	width: 100%;
-	height: 250px;
+	height: 450px;
 	text-align: center;
 }
-
 .skillheading h1 {
 	color: white;
-	font-size: 300%;
-	margin-top: 4rem;
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	font-size: 3rem;
+	font-family: 'Kanit';
 }
-
-.skillheading p {
+.skillheading h5 {
 	color: white;
-	font-size: 150%;
+	font-size: 1.6rem;
+	font-weight: 400;
+	font-family: 'Kanit';
 }
 
-.myskills {
-	width: 80%;
+.skill-icon {
+	width: 60%;
 	border-radius: 20px;
+	background-color: #bbb;
+	margin-top: -7rem;
+}
+.skill-icon h3 {
+	font-family: 'Kanit';
 }
 
 .col-lg-4 {
@@ -236,104 +347,302 @@
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	border: 1px solid gray;
 }
 
-.pyt {
-	height: 10vh;
+.fa {
+	font-size: 5rem;
+}
+.fa-python {
+	color: #ffd300;
 }
 
-.main {
-	background-color: gray;
-	height: 100%;
+.fa-html5 {
+	color: #ff6600;
+}
+
+.fa-css3-alt {
+	color: #0da2ff;
+}
+.fa-bold {
+	color: #553c7b;
+}
+.fas {
+	font-size: 5rem;
+}
+
+.fab {
+	font-size: 5rem;
 }
 
 .footer {
+	background-color: #98ff98;
 	height: 600px;
 	width: 100%;
-	background-color: #98ff98;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid black;
-	position: absolute;
+	margin-top: 17rem;
+	border: 2px solid #98ff98;
+}
+.footer-text {
 	margin-top: 15rem;
-	flex-direction: column;
+	color: white;
+	font-weight: 100;
+	font-size: 2.5rem;
+	font-family: 'Kanit';
 }
 
-.sub-footer {
-	height: 200px;
+.subfooter {
 	width: 80%;
-	margin-top: -32rem;
+	height: 200px;
 	background-color: black;
-	position: absolute;
-	top: 70%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 	border-radius: 20px;
+	margin-top: -42rem;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	/* flex-direction: row; */
 }
 
 .left {
 	color: white;
-	font-size: 4vh;
-	font-weight: 600;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 1px;
+	font-family: 'Kanit';
+	/* height:auto; */
+	/* border:2px solid white; */
+	/* padding-top: 4rem; */
 }
-
 .right {
-	color: white;
-	font-size: 2vh;
 	display: flex;
-	text-align: center;
 	justify-content: center;
 	align-items: center;
-	letter-spacing: 1px;
+	color: white;
+	font-weight: 300;
+	font-size: 1.3rem;
+	font-family: 'Kanit';
+	/* height:auto; */
+	/* padding-top: 4rem; */
+	/* border:2px solid white */
 }
 
 .icons {
 	height: 100px;
-	margin-top: 10px;
+	margin-top: 6rem;
 	text-align: center;
+	/* border:2px solid black */
 }
 
-.footer h1 {
-	margin-top: 5rem;
-	font-size: 4.5vh;
-	text-align: center;
-	color: white;
-	padding-top: 40px;
-	font-weight: 300;
-}
-
-.fab {
-	font-size: 5vh;
-	border: 4px solid white;
-	padding: 20px;
-	margin: 3px;
-	border-radius: 50%;
+.insta {
+	font-size: 60px;
+	margin-right: 2rem;
 	color: white;
 }
-
-.fa {
-	font-size: 5vh;
-	border: 4px solid white;
-	padding: 20px;
-	margin: 3px;
-	border-radius: 50%;
+.github {
+	font-size: 60px;
+	/* margin-right: 2rem; */
+	color: white;
+}
+.linkedin {
+	font-size: 60px;
+	margin-right: 2rem;
 	color: white;
 }
 
-.fab:hover {
-	color: #98ff98;
-	background-color: white;
+.insta:hover,
+.github:hover,
+.linkedin:hover {
+	color: #d5d5d5;
 }
 
-.fa:hover {
-	color: #98ff98;
-	background-color: white;
+@media (max-width: 992px) {
+	.head h1 {
+		font-size: 3.4rem;
+		/* border:2px solid black; */
+		margin-top: 7rem;
+	}
+	.head p {
+		margin-top: 1rem;
+		font-size: 1.6rem;
+		/* border:2px solid black */
+	}
+
+	.girl-adjust {
+		margin-top: 3.5rem;
+		height: 16rem;
+		/* border:2px solid black */
+	}
+	.img-adjust {
+		height: 16.8rem;
+		/* border:2px solid black */
+	}
+
+	.intro h1 {
+		/* border:2px solid black; */
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		margin-top: 4rem;
+		/* border:2px solid black */
+	}
+	.intro h5 {
+		/* border:2px solid black; */
+		/* margin-top: 2rem; */
+		font-size: 1.4rem;
+		border:2px solid black;
+		padding: 0px 20px;
+	}
+	.workheading {
+		font-size: 3.2rem;
+	}
+	.button {
+		font-size: 1.6rem;
+		padding: 0.7rem 5rem;
+	}
+	.skillheading h1 {
+		font-size: 2.8rem;
+	}
+	.skillheading h {
+		font-size: 1.8rem;
+	}
+	.left h1 {
+		font-size: 2.7rem;
+	}
+	.right h {
+		font-size: 1.4rem;
+	}
+	.footer-text {
+		font-size: 2.5rem;
+		margin-top: 14rem;
+	}
+	.icons {
+		margin-top: 5rem;
+	}
+	.right {
+		height: auto;
+		display: block;
+		margin-top: 1.5rem;
+	}
+	.left {
+		height: auto;
+		display: block;
+		margin-top: 2rem;
+	}
+
+	.timeline-text h2 {
+		font-size: 1rem;
+		margin-top: 1rem;
+		font-family: 'Kanit';
+	}
+
+	.timeline-text p {
+		font-size: 0.7rem;
+		font-family: 'Kanit';
+	}
+	.timeline-text{
+		background-color: black;
+		color:white
+	}
+}
+
+@media (max-width: 768px) {
+	.head h1 {
+		font-size: 2.7rem;
+	}
+	.head p {
+		font-size: 1.3rem;
+	}
+
+	.girl-adjust {
+		height: 14rem;
+	}
+	.img-adjust {
+		height: 15rem;
+	}
+
+	.intro h1 {
+		font-size: 2.2rem;
+	}
+	.intro h5 {
+		font-size: 1.3rem;
+	}
+	.workheading {
+		font-size: 2.8rem;
+	}
+	.button {
+		font-size: 1.4rem;
+		padding: 0.7rem 4rem;
+	}
+	.skillheading h1 {
+		font-size: 2.5rem;
+	}
+	.skillheading h {
+		font-size: 1.6rem;
+	}
+	.left h1 {
+		font-size: 2.3rem;
+	}
+	.right h {
+		font-size: 1.2rem;
+	}
+	.footer-text {
+		font-size: 2.2rem;
+		margin-top: 14rem;
+	}
+	.icons {
+		margin-top: 3rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.head h1 {
+		margin-top: 5rem;
+		font-size: 2.2rem;
+	}
+	.head p {
+		font-size: 1.2rem;
+	}
+
+	.girl-adjust {
+		height: 12rem;
+		margin-top: 2.5rem;
+	}
+	.img-adjust {
+		height: 10rem;
+	}
+
+	.intro h1 {
+		font-size: 1.6rem;
+		border:2px solid black;
+		margin-top: 15px;
+		padding: 0px 10px;
+	}
+	.intro h5 {
+		font-size: 1rem;
+
+	}
+	.workheading {
+		font-size: 2.2rem;
+	}
+	.button {
+		font-size: 1rem;
+		padding: 0.5rem 2rem;
+	}
+	.skillheading h1 {
+		font-size: 2.2rem;
+	}
+	.skillheading h {
+		font-size: 1.2rem;
+	}
+	.left h1 {
+		font-size: 1.8rem;
+	}
+	.right h {
+		font-size: 1rem;
+	}
+	.footer-text {
+		font-size: 1.9rem;
+		/* border: 2px solid black; */
+		margin-top: 12rem;
+	}
+	.icons {
+		margin-top: 3rem;
+	}
+	.edu{
+		font-size: 2rem;
+	}
 }
