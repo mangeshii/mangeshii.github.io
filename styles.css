@@ -55,7 +55,7 @@
 .second-page {
 	height: 100%;
 	width: 100%;
-	background-color: #98ff98;
+	background-color: #06c258;
 }
 
 .intro {
@@ -300,7 +300,7 @@
 }
 
 .skills {
-	background-color: #98ff98;
+	background-color: #06c258;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -373,11 +373,11 @@
 }
 
 .footer {
-	background-color: #98ff98;
+	background-color: #06c258;
 	height: 600px;
 	width: 100%;
 	margin-top: 17rem;
-	border: 2px solid #98ff98;
+	border: 2px solid #06c258;
 }
 .footer-text {
 	margin-top: 15rem;
