@@ -8,11 +8,9 @@
 }
 
 .navbar-nav {
-	/* border:2px solid black; */
 	margin-top: 0;
 }
 .nav-item {
-	/* border:2px solid red; */
 	padding: 1rem 1rem;
 	background-color: white;
 }
@@ -78,6 +76,7 @@
 	font-size: 1.4rem;
 	line-height: 1.5rem;
 	font-family: 'Kanit';
+	/* border:2px solid #98ff98 */
 }
 .second-page-overlap {
 	height: 56rem;
@@ -164,12 +163,10 @@
 }
 
 .edu {
-	/* padding: 2rem; */
 	margin-bottom: 100px;
 	font-size: 2.5rem;
 	font-weight: 600;
 	font-family: Kanit;
-	/* border:2px solid black; */
 	text-align: center;
 }
 
@@ -328,6 +325,7 @@
 	font-size: 1.6rem;
 	font-weight: 400;
 	font-family: 'Kanit';
+
 }
 
 .skill-icon {
@@ -395,18 +393,11 @@
 	background-color: black;
 	border-radius: 20px;
 	margin-top: -42rem;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
-	/* flex-direction: row; */
 }
 
 .left {
 	color: white;
 	font-family: 'Kanit';
-	/* height:auto; */
-	/* border:2px solid white; */
-	/* padding-top: 4rem; */
 }
 .right {
 	display: flex;
@@ -416,16 +407,12 @@
 	font-weight: 300;
 	font-size: 1.3rem;
 	font-family: 'Kanit';
-	/* height:auto; */
-	/* padding-top: 4rem; */
-	/* border:2px solid white */
 }
 
 .icons {
 	height: 100px;
 	margin-top: 6rem;
 	text-align: center;
-	/* border:2px solid black */
 }
 
 .insta {
@@ -435,7 +422,6 @@
 }
 .github {
 	font-size: 60px;
-	/* margin-right: 2rem; */
 	color: white;
 }
 .linkedin {
@@ -453,37 +439,28 @@
 @media (max-width: 992px) {
 	.head h1 {
 		font-size: 3.4rem;
-		/* border:2px solid black; */
 		margin-top: 7rem;
 	}
 	.head p {
 		margin-top: 1rem;
 		font-size: 1.6rem;
-		/* border:2px solid black */
 	}
 
 	.girl-adjust {
 		margin-top: 3.5rem;
 		height: 16rem;
-		/* border:2px solid black */
 	}
 	.img-adjust {
 		height: 16.8rem;
-		/* border:2px solid black */
 	}
 
 	.intro h1 {
-		/* border:2px solid black; */
 		font-size: 2.5rem;
 		margin-bottom: 1rem;
 		margin-top: 4rem;
-		/* border:2px solid black */
 	}
 	.intro h5 {
-		/* border:2px solid black; */
-		/* margin-top: 2rem; */
 		font-size: 1.4rem;
-		border:2px solid black;
 		padding: 0px 20px;
 	}
 	.workheading {
@@ -496,13 +473,13 @@
 	.skillheading h1 {
 		font-size: 2.8rem;
 	}
-	.skillheading h {
+	.skillheading h5 {
 		font-size: 1.8rem;
 	}
 	.left h1 {
 		font-size: 2.7rem;
 	}
-	.right h {
+	.right h5 {
 		font-size: 1.4rem;
 	}
 	.footer-text {
@@ -576,7 +553,7 @@
 	.left h1 {
 		font-size: 2.3rem;
 	}
-	.right h {
+	.right h5 {
 		font-size: 1.2rem;
 	}
 	.footer-text {
@@ -607,7 +584,6 @@
 
 	.intro h1 {
 		font-size: 1.6rem;
-		border:2px solid black;
 		margin-top: 15px;
 		padding: 0px 10px;
 	}
@@ -625,18 +601,20 @@
 	.skillheading h1 {
 		font-size: 2.2rem;
 	}
-	.skillheading h {
+	.skillheading h5 {
 		font-size: 1.2rem;
 	}
 	.left h1 {
 		font-size: 1.8rem;
+		margin-bottom: 0;
 	}
-	.right h {
+	.right h5 {
 		font-size: 1rem;
+		margin-bottom: 0;
+		
 	}
 	.footer-text {
 		font-size: 1.9rem;
-		/* border: 2px solid black; */
 		margin-top: 12rem;
 	}
 	.icons {
